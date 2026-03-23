@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Activity 3 Intro Boys</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 40px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container with Fade-In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Task 3: Moving Marquee Box */
+        .marquee-box {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 5px solid #3498db;
+        }
+
+        /* Moving/Hover Image Styling */
+        .group-photo {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .group-photo:hover {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Headings and Markers */
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        h2 { color: #3498db; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 30px; }
+        mark { background-color: #f1c40f; padding: 0 5px; border-radius: 4px; }
+        hr { border: 0; height: 1px; background: #eee; margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Task 3: Marquee & Photo</h2>
+    <div class="marquee-box">
+        <marquee behavior="alternate" scrollamount="10">
+            <strong> GROUP NUMBER 3: intro boys </strong>
+        </marquee>
+    </div>
+
+    <img src="https://scontent.fmnl33-3.fna.fbcdn.net/v/t1.15752-9/652338212_1489193492654385_216356757439030012_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFJJOLIuQOCf0314dOOxRTCUtFJCbV_DS5S0UkJtX8NLklvewfK4Ko6zr56DCAldG-vlkZVyrEGOKypSuLAIUDS&_nc_ohc=yLM-qpZpkwoQ7kNvwF_Gw8_&_nc_oc=AdrjrZNO9NSVfioWlNaGszAwlL5PS8URYgapvwoKD77x1YzXx0cgtR-doWDC1ZBVhkJR7IgsOrL2esaCcIDB3ODE&_nc_zt=23&_nc_ht=scontent.fmnl33-3.fna&_nc_ss=7a32e&oh=03_Q7cD4wFvEY_TG5jcd2pwe_ZT6uLnk3CVi3N9VjJ1Wdkfmoo1QA&oe=69E82BEC" alt="Our Group Photo" class="group-photo">
+
+    <hr>
+
+    <h2>Task 1: Corrected Formatting</h2>
+    <h1>Learning HTML</h1>
+    <p>HTML is <b>very important</b> for web development.</p>
+
+    <hr>
+
+    <h2>Task 2: Formatting Challenge</h2>
+    
+    <h1>Welcome to HTML Learning</h1>
+    
+    <p>HTML is the <b>standard language</b> for creating webpages.</p>
+    
+    <p>Learning HTML is <mark>fun and useful</mark>.</p>
+    
+    <p>Some old tags are <strike>deprecated</strike>.</p>
+    
+    <p>Students <u>must</u> write the HTML code.</p>
+
+</div>
+
+</body>
+</html>
